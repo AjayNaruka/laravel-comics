@@ -9,7 +9,7 @@
     <div class="header-right">
       <ul>
         @foreach ($links as $link )
-          <li><a href="{{route($link)}}">{{strtoupper($link)}}</a></li>
+          <li class="{{ request()->is($link) ? 'active' : ''}}"><a href="{{route($link)}}">{{ ($link==='/')? 'HOME': strtoupper($link)}}</a></li>
         @endforeach
       </ul>
     </div>

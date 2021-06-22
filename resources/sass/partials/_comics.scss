@@ -1,0 +1,18 @@
+main.comics{
+  .clearfix::after{
+    display: table;
+    content: '';
+    clear: both;
+  }
+  height: fit-content;
+  .main-left{
+    float: left;
+    width: 30%;
+    background-color: red;
+  }
+  .main-right{
+    float: left;
+    width: 70%;
+    background-color: green;
+  }
+}
