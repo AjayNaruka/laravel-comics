@@ -158,6 +158,8 @@ main.home h1 {
 
 main.main-cards {
   text-align: center;
+  background-color: #1c1c1c;
+  color: white;
   padding: 20px 0;
 }
 main.main-cards .cards-container {
@@ -169,6 +171,7 @@ main.main-cards .cards-container {
   /* background-color: #212121; */
 }
 main.main-cards .cards-container .card {
+  color: black;
   cursor: pointer;
   position: relative;
   display: flex;
@@ -208,6 +211,8 @@ main.main-cards .cards-container .card:hover .card-overlay {
 
 main.comics {
   text-align: left;
+  background-color: #1c1c1c;
+  color: white;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -233,7 +238,7 @@ main.comics .main-left li {
   margin-bottom: 10px;
 }
 main.comics .main-left li.active {
-  background-color: greenyellow;
+  background-color: red;
 }
 main.comics .main-right {
   float: left;
@@ -247,4 +252,5 @@ main.comics .main-right {
 main.comics .main-right img {
   margin-top: 15px;
   width: 250px;
+  border: 1px solid white;
 }

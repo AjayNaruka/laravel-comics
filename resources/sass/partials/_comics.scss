@@ -1,6 +1,7 @@
 main.comics{
   text-align: left;
-  
+  background-color: #1c1c1c;
+  color: white;
   .clearfix::after{
     display: table;
     content: '';
@@ -23,7 +24,7 @@ main.comics{
       margin-bottom: 10px;
     }
     li.active{
-      background-color: greenyellow;
+      background-color: red;
     }
   }
   .main-right{
@@ -37,6 +38,7 @@ main.comics{
     img{
       margin-top: 15px;
       width: 250px;
+      border: 1px solid white;
     }
   }
 }

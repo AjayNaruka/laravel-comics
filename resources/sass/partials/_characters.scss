@@ -1,5 +1,7 @@
 main.main-cards{
   text-align: center;
+  background-color: #1c1c1c;
+  color:white;
   padding: 20px 0;
   .cards-container{
     margin: 0 auto;
@@ -10,6 +12,7 @@ main.main-cards{
     /* background-color: #212121; */
 
     .card{
+      color: black;
       cursor: pointer;
       position: relative;
       display: flex;
