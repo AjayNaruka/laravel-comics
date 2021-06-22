@@ -1,18 +1,42 @@
 main.comics{
+  text-align: left;
+  
   .clearfix::after{
     display: table;
     content: '';
     clear: both;
   }
   height: fit-content;
+  .container{
+    width: 90%;
+    margin: 0 auto;
+  }
   .main-left{
+    
     float: left;
     width: 30%;
-    background-color: red;
+    /* background-color: red; */
+    li{
+      cursor: pointer;
+      padding: 5px 10px;
+      border: 1px solid black;
+      margin-bottom: 10px;
+    }
+    li.active{
+      background-color: greenyellow;
+    }
   }
   .main-right{
     float: left;
-    width: 70%;
-    background-color: green;
+    width: 69%;
+    /* background-color: green; */
+    border-left: 2px solid gray;
+    margin-left: 1%;
+    height: 100%;
+    padding: 5px 10px;
+    img{
+      margin-top: 15px;
+      width: 250px;
+    }
   }
 }

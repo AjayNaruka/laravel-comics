@@ -3,8 +3,8 @@
 @section('content')
 <main class="comics main-cards">
   
-  <h1>COMICS</h1>
-  <div class="cards-container">
+  
+  {{-- <div class="cards-container">
     @foreach ($fumetti as $fumetto )
       
     
@@ -23,30 +23,36 @@
     @endforeach
     
 
-  </div>
+  </div> --}}
 
 
-  {{-- MENU --}}
- {{--  @php
+  {{-- MENU LATERALE --}}
+  @php
       $descriptions =[];
+      $img_urls =[];
       $active_desc =1;
+      $toShow = (empty($_GET['show'])) ? '0' : $_GET['show'];
   @endphp
   <div class="container clearfix">
+    <h1>COMICS</h1>
     <div class="main-left">
       <ul>
         @foreach ($fumetti as $fumetto )
-          <li>{{$fumetto['title']}}</li>
+          <li class="{{($loop->index==$toShow) ? 'active' : 'null'}}" onclick="window.location.assign('comics?show={{$loop->index}}');">{{$fumetto['title']}}</li>
           @php
-              $desciptions[] = $fumetto['description']
+              $desciptions[] = $fumetto['description'];
+              $img_urls[] = $fumetto['thumb']
           @endphp
         @endforeach
       </ul>
     </div>
     <div class="main-right">
-      <p>{{$desciptions[$active_desc]}}</p>
+      
+      <p>{{$desciptions[$toShow]}}</p>
+      <img src="{{$img_urls[$toShow]}}" alt="">
     </div>
      
-  </div> --}}
+  </div>
   
     
 </main>

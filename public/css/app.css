@@ -207,6 +207,7 @@ main.main-cards .cards-container .card:hover .card-overlay {
 }
 
 main.comics {
+  text-align: left;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -216,13 +217,34 @@ main.comics .clearfix::after {
   content: "";
   clear: both;
 }
+main.comics .container {
+  width: 90%;
+  margin: 0 auto;
+}
 main.comics .main-left {
   float: left;
   width: 30%;
-  background-color: red;
+  /* background-color: red; */
+}
+main.comics .main-left li {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+main.comics .main-left li.active {
+  background-color: greenyellow;
 }
 main.comics .main-right {
   float: left;
-  width: 70%;
-  background-color: green;
+  width: 69%;
+  /* background-color: green; */
+  border-left: 2px solid gray;
+  margin-left: 1%;
+  height: 100%;
+  padding: 5px 10px;
+}
+main.comics .main-right img {
+  margin-top: 15px;
+  width: 250px;
 }
