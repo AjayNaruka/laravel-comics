@@ -237,6 +237,9 @@ main.comics .main-left li {
   border: 1px solid black;
   margin-bottom: 10px;
 }
+main.comics .main-left li:hover {
+  background-color: red;
+}
 main.comics .main-left li.active {
   background-color: red;
 }

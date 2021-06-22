@@ -22,10 +22,14 @@ main.comics{
       padding: 5px 10px;
       border: 1px solid black;
       margin-bottom: 10px;
+      &:hover{
+        background-color: red;
+      }
     }
     li.active{
       background-color: red;
     }
+
   }
   .main-right{
     float: left;
