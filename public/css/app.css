@@ -1,0 +1,71 @@
+header {
+  height: 60px;
+  width: 100%;
+  /* background-color: red; */
+}
+header .header-80 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header-80 .logo {
+  cursor: pointer;
+}
+.header-80 .logo img {
+  height: 45px;
+}
+.header-80 .header-right ul li {
+  display: inline-block;
+  margin-left: 10px;
+  height: 60px;
+  line-height: 60px;
+  /* background-color: green; */
+  cursor: pointer;
+  padding: 0px 5px;
+  font-size: smaller;
+}
+.header-80 .header-right ul li.active, .header-80 .header-right ul li:hover {
+  border-bottom: 5px solid #58A0FA;
+  color: #58A0FA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-template .head-jumbotron {
+  background: red;
+  widows: 100%;
+  height: 450px;
+  background-image: url("../img/jumbotron.jpg");
+  background-size: cover;
+}
+
+main.home {
+  display: flex;
+  flex-direction: column;
+  background-color: #313131;
+  height: calc(100vh - 510px);
+  justify-content: center;
+  align-items: center;
+}
+main.home h1 {
+  color: red;
+}

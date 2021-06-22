@@ -1,0 +1,40 @@
+header{
+  height: 60px;
+  width: 100%;
+  /* background-color: red; */
+  .header-80{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  
+}
+.header-80{
+  .logo{
+    cursor: pointer;
+    img{
+      height: 45px;
+    }
+  }
+  .header-right{
+    ul li{
+      display: inline-block;
+      margin-left: 10px;
+      height: 60px;
+      line-height: 60px;
+      /* background-color: green; */
+      cursor: pointer;
+      padding: 0px 5px;
+      font-size: smaller;
+      &.active,
+      &:hover{
+        border-bottom: 5px solid #58A0FA;
+        color:#58A0FA ;
+      }
+    }
+  }
+}

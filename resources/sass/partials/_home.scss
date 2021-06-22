@@ -1,0 +1,11 @@
+main.home{
+  display: flex;
+  flex-direction: column;
+  background-color: #313131;
+  height: calc(100vh - 510px);
+  justify-content: center;
+  align-items: center;
+  h1{
+    color: red;
+  }
+}
